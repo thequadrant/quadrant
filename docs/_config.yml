@@ -1,0 +1,10 @@
+title: "The Quadrant"
+theme: minima
+
+header_pages:
+  - DeveloperGuide.md
+
+markdown: kramdown
+
+repository: "thequadrant/quadrant"
+github_icon: "images/github-icon.png"
