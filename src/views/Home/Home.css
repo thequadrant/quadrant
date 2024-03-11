@@ -1,0 +1,30 @@
+.HomeContainer {
+    text-align: center;
+    background: #00091B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ComingSoonTitle {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.QuadrantTitle {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 65px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.AboutQuadrantText {
+    color: white;
+    margin-top: 50px;
+    font-style: italic;
+    padding: 0px 30px 0px 30px;
+}
