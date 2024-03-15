@@ -26,5 +26,13 @@
     color: white;
     margin-top: 50px;
     font-style: italic;
+    align-self: center;
+    width: 800px;
     padding: 0px 30px 0px 30px;
+}
+
+.AdminLogin {
+    margin-top: 30px;
+    width: 100px;
+    align-self: center;
 }

@@ -1,6 +1,14 @@
+import React from "react";
+import { signInWithGoogle } from "../../services/authentication";
 import "./Home.css";
 
-const Home = () => {
+function Home() {
+  const login = () => {
+    signInWithGoogle().then(({ displayName }) => {
+      alert(displayName);
+    });
+  };
+
   return (
     <div className="HomeContainer">
       <div className="QuadrantTitle">The Quadrant</div>
@@ -9,8 +17,11 @@ const Home = () => {
         The Quadrant is an NUS College student-run magazine that aspires to
         capture the vibrancy, creativity and diversity of our student body.
       </div>
+      <button type="submit" className="AdminLogin" onClick={login}>
+        Admin Login
+      </button>
     </div>
   );
-};
+}
 
 export default Home;
