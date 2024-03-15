@@ -1,10 +1,17 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { signInWithGoogle } from "../../services/authentication";
 import "./Home.css";
 
 function Home() {
+  const navigate = useNavigate();
+
   const login = () => {
-    signInWithGoogle();
+    signInWithGoogle().then((user) => {
+      if (user) {
+        navigate("/dashboard");
+      }
+    });
   };
 
   return (

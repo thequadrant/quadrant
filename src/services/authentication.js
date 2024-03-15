@@ -28,7 +28,7 @@ const signInWithGoogle = async () => {
     const { user } = res;
     return user;
   } catch (err) {
-    return { displayName: null };
+    return null;
   }
 };
 

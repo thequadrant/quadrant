@@ -1,13 +1,11 @@
 import React from "react";
 import { Outlet, Navigate } from "react-router-dom";
-import { auth } from "../services/authentication";
+import { useAuth } from "../store/AuthContext";
 
 function PrivateRoutes() {
-  return auth != null ? (
-    <Outlet />
-  ) : (
-    <Navigate to="/" />
-  );
+  const { isAuthed } = useAuth();
+
+  return isAuthed ? <Outlet /> : <Navigate to="/" />;
 }
 
 export default PrivateRoutes;
