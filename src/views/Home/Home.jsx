@@ -4,9 +4,7 @@ import "./Home.css";
 
 function Home() {
   const login = () => {
-    signInWithGoogle().then(({ displayName }) => {
-      alert(displayName);
-    });
+    signInWithGoogle();
   };
 
   return (
