@@ -21,6 +21,8 @@ module.exports = {
   },
   rules: {
     'object-curly-newline': 'off',
-    "quotes": [2, "double", { "avoidEscape": true }]
+    "quotes": [2, "double", { "avoidEscape": true }],
+    "react/prop-types": "off",
+    "react/jsx-no-constructed-context-values": "off"
   },
 };
