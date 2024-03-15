@@ -35,4 +35,10 @@
     margin-top: 30px;
     width: 100px;
     align-self: center;
+    background: none;
+    color: white;
+    border: none;
+    text-decoration: underline;
+    font-size: 15px;
+    cursor: pointer;
 }
