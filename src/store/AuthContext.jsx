@@ -5,19 +5,24 @@ const AuthContext = createContext();
 
 function AuthProvider({ children }) {
   const [isAuthed, setIsAuthed] = useState(true);
+  const [authedUser, setAuthedUser] = useState(null);
 
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
       if (user) {
         setIsAuthed(true);
+        setAuthedUser(user);
       } else {
         setIsAuthed(false);
+        setAuthedUser(null);
       }
     });
   }, [auth]);
 
   return (
-    <AuthContext.Provider value={{ isAuthed }}>{children}</AuthContext.Provider>
+    <AuthContext.Provider value={{ isAuthed, authedUser }}>
+      {children}
+    </AuthContext.Provider>
   );
 }
 
