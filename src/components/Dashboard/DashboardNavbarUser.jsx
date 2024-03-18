@@ -1,6 +1,7 @@
 import React from "react";
 import { DownOutlined } from "@ant-design/icons";
 import { Dropdown, Space } from "antd";
+import { logout } from "../../services/authentication";
 import { useAuth } from "../../store/AuthContext";
 
 function DashboardNavbarUser() {
@@ -9,14 +10,21 @@ function DashboardNavbarUser() {
   const items = [
     {
       label: "Logout",
-      key: "0",
+      key: "logout",
     },
   ];
+
+  const onClick = ({ key }) => {
+    if (key === "logout") {
+      logout();
+    }
+  };
 
   return (
     <Dropdown
       menu={{
         items,
+        onClick,
       }}
       trigger={["click"]}
     >
