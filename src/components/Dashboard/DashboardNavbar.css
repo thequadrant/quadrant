@@ -1,0 +1,15 @@
+.dashboard-navbar-container {
+  background-color: grey;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  height: 50px;
+}
+
+.dashboard-logo {
+    padding-left: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(76, 76, 76);
+}
