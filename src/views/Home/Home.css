@@ -1,44 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+
 .HomeContainer {
     text-align: center;
-    background: #00091B;
+    background: #fffff5;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    font-family: "Gilda Display", serif;
 }
 
-.ComingSoonTitle {
-    color: white;
+.HomeNavbar {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 50px;
     font-size: 20px;
-    font-weight: bold;
 }
 
 .QuadrantTitle {
-    color: white;
-    margin-bottom: 20px;
-    font-size: 65px;
+    color: black;
+    margin-bottom: 25px;
+    font-size: 3.5em;
     font-weight: bold;
     font-style: italic;
+    letter-spacing: 0em;
+}
+
+.HomeCountdownContainer {
+    margin-top: 50px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.HomeComingSoonTitle {
+    margin-top: 40px;
+    color: rgb(68, 68, 68);
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+.QuadrantCountdown {
+    padding-top: 10px;
+    padding-left: 5px;
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 40px;
+
 }
 
 .AboutQuadrantText {
-    color: white;
-    margin-top: 50px;
+    color: black;
+    margin-top: 3em;
     font-style: italic;
     align-self: center;
-    width: 800px;
+    margin-bottom: 3em;
     padding: 0px 30px 0px 30px;
 }
 
-.AdminLogin {
-    margin-top: 30px;
+.Login {
     width: 100px;
     align-self: center;
     background: none;
-    color: white;
+    color: black;
     border: none;
     text-decoration: underline;
-    font-size: 15px;
+    font-size: 20px;
+    font-family: "Gilda Display", serif;
     cursor: pointer;
+    position: absolute;
+    right: 50px;
+}
+
+.HomeContent {
+    align-self: center;
+    justify-content: center;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+.HomeFooter {
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid black;
+    align-items: center;
+    padding: 50px 50px;
 }
