@@ -1,8 +1,8 @@
 import React from "react";
 import Countdown from "react-countdown";
 import { useNavigate } from "react-router-dom";
-import { signInWithGoogle } from "../../services/authentication";
 import { Helmet } from "react-helmet";
+import { signInWithGoogle } from "../../services/authentication";
 import "./Home.css";
 
 function Home() {
