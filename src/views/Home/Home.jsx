@@ -2,6 +2,7 @@ import React from "react";
 import Countdown from "react-countdown";
 import { useNavigate } from "react-router-dom";
 import { signInWithGoogle } from "../../services/authentication";
+import { Helmet } from "react-helmet";
 import "./Home.css";
 
 function Home() {
@@ -17,6 +18,11 @@ function Home() {
 
   return (
     <div className="HomeContainer">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>The Quadrant | A NUS College Student-Run Magazine</title>
+        <link rel="canonical" href="http://thequadrant.org/" />
+      </Helmet>
       <div className="HomeNavbar">
         <div className="HomeNavbarTitle">THE QUADRANT</div>
         <button type="submit" className="Login" onClick={login}>
@@ -33,8 +39,8 @@ function Home() {
             date={new Date("2024-05-01")}
             renderer={(props) => (
               <div className="QuadrantCountdown">
-                {props.days} days {props.hours} hrs {props.minutes}
-                {" "} mins {props.seconds} secs
+                {props.days} days {props.hours} hrs {props.minutes} mins{" "}
+                {props.seconds} secs
               </div>
             )}
           />
